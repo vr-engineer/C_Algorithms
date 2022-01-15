@@ -1,2 +1,2 @@
-# Practicar-programaci-n-en-C
+# Practicar_programacion_en_C
 Ejercicios resueltos
