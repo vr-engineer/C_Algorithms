@@ -1,4 +1,4 @@
-/*Introduce un intervalo [n,n] y el algoritmo te devolverá el listado de números primos que pertenecen a ese intervalo*/
+/*Introduce un intervalo [n,n] y el algoritmo te devolverá el listado de números primos que pertenecen a ese intervalo*//*5.4.5*/
 
 #include <stdio.h>           //Librería para las funciones printf() y scanf().
 
@@ -42,3 +42,4 @@ void generar_primo(int numero){         //El valor de n1 se copia a la variable 
                                         //Si n1, o sea, numero no es primo, no se imprime.
 return;                                 //La función es de tipo void, no devuelve ningun valor.
 }
+
