@@ -1,4 +1,4 @@
-/*Diseñar una calculadora que haga las operaciones básicas con dos operandos*//*5.4.1*/
+/*Diseñar una calculadora que haga las operaciones básicas, pindiendo al usuario dos operandos*//*5.4.1*/
 
 #include <stdio.h>
 
