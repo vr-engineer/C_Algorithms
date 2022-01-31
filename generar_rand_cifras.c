@@ -1,5 +1,5 @@
 /*Algoritmo que pida al usuario el número de cifras de un número para generarlo de forma aleatoria. La cifra más significativa no puede ser 0.*//*5.4.7*/
-
+/*También muestra el número de veces que se invoca cada función generadora*/
 
 #include <stdio.h>          //Librería para printf() y scanf()
 #include <stdlib.h>         //Librería para rand()
@@ -13,6 +13,10 @@ void funcion_1cifra(void);
 int main()
 {
     int cifras;
+    int llamada1=0;
+    int llamada2=0;
+    int llamada3=0;
+    
     do{                                         //El bucle nos garantiza no introducir una cifra 0 ni cifras negativas.
         printf("Introduzca el número de cifas del número a generar\n");
         scanf("%d",&cifras);
@@ -26,16 +30,23 @@ int main()
         if(cifras>=3){                          //Si quedan 3 o más cifras por rellenar, ejecutaremos esta función
             funcion_3cifras();                  //Invocamos la función que genera 3 cifras aleatorias.
             cifras-=3;                          //Hemos completado 3 cifras. 
+            
+            llamada3++;                         //Registramos una llamada a la función.
         }
         else if((cifras>1)&&(cifras<3)){        //Si quedan menos de 3 cifras y más de 1 por rellenar, ejecutaremos esta función.
             funcion_2cifras();                  //Invocamos la función que genera 2 cifras aleatorias.
             cifras-=2;                          //Hemos completado 2 cifras.
+            
+            llamada2++;                         //Registramos una llamada a la función.
         }
         else{                                   //Si queda 1 cifra por rellenar, ejecutaremos esta función.
             funcion_1cifra();                   //Invocamos la función que genera 1 cifra aleatoria.
             cifras-=1;                          //Hemos completado 1 cifras.
+            
+            llamada1++;                         //Registramos una llamada a la función.
         }
     }
+    printf("\nLlamadas a función3: %d| LLamadas a función2: %d| Llamadas a función1: %d|\n",llamada3,llamada2,llamada1); //Una vez creamos todas las cifras. 
     return 0;                                   //Valor de retorno de la función main().
 }
 
