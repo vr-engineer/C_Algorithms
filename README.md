@@ -1,4 +1,4 @@
-# Programacion_C
+# Exercises in C
 
 Saludos en cubierta.
 
