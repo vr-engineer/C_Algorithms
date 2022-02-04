@@ -1,4 +1,4 @@
-# Exercises_in_C
+# Algoritmos en C
 
 Saludos en cubierta.
 
